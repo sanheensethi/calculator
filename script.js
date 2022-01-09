@@ -34,6 +34,7 @@ onoff.addEventListener('click',function(){
 			allOff = true;
 		}
 		onoff.innerHTML = "OFF"
+		clear.disabled = true;
 		display.innerHTML = ""
 		onoff.classList.remove("bg-success");
 		onoff.classList.add("bg-danger");
