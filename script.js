@@ -16,13 +16,14 @@ for(btn of getAllBtns){
 	btn.disabled = true;
 	allOff = true;
 }
-
+clear.disabled = true;
 onoff.addEventListener('click',function(){
 	if(allOff){
 		for(btn of getAllBtns){
 			btn.disabled = false;
 			allOff = false;
 		}
+		clear.disabled = false;
 		onoff.innerHTML = "ON"
 		display.innerHTML = "0"
 		onoff.classList.remove("bg-danger");
